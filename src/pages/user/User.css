@@ -1,0 +1,21 @@
+.user{
+  margin-top: 180px;
+  margin-bottom: 400px;
+}
+.user  h2 {
+  margin-bottom: 20px;
+}
+.users__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
+}
+.users__div button {
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: red;
+}

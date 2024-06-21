@@ -1,0 +1,113 @@
+.header {
+  padding: 10px 0;
+  padding-right: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f4f4;
+  position: fixed;
+  left: 0;right: 0;top: 0;
+  z-index: 5;
+}
+.header__start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.header__list {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+}
+.header__list-link {
+  text-decoration:double;
+  color: black;
+}
+.header__inp {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(171, 170, 170);
+}
+
+.header__menu-burgers {
+  display: none;
+}
+.header__menu {
+  height: 100%;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+.header__menu-span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #ff0000;
+  left: 1px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+.header__menu-span:nth-child(2) {
+  width: 12px;
+}
+.header__menu-span:nth-child(1) {
+  transform: translateY(-10px);
+}
+.header__menu-span:nth-child(3) {
+  transform: translateY(10px);
+}
+.header.open .header__menu-span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+.header.open .header__menu-span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__menu-span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media only screen and (max-width: 730px) {
+  .header__list {
+    position: absolute;
+    background-color: red;
+    flex-direction: column;
+    left: -450px;
+    transition: .3s;
+    top: 73px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 400px;
+    height: 100vh;
+
+  }
+  .header__list-link {
+    color: #fff;
+  }
+  .header__menu-burgers {
+    display: block;
+  }
+  .header.open .header__list {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .header__list {
+    width: 80%;
+    top: 57px;
+  }
+  .header__inp{
+    display: none;
+  }
+  .header__img {
+    width: 150px;
+  }
+}
+.header__list-link {
+  text-decoration: double;
+  color: black;
+
+}

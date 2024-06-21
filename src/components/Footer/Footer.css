@@ -1,0 +1,26 @@
+.footer {
+  padding-top: 74px;
+  padding-bottom: 74px;
+  padding-right: 40px;
+  background: rgba(237, 242, 244, 1);
+
+}
+.footer__start {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.footer p {
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer__text {
+  max-width: 186px;
+  line-height: 20px;
+}
+.footer__group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

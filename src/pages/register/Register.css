@@ -1,0 +1,29 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.register  h1 {
+  text-align: center;
+}
+.register  input {
+  padding: 12px 18px;
+  border-radius: 4px;
+  border: 1px solid #bbb8b8;
+}
+.register button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+}
